@@ -303,6 +303,12 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
             addedKeys.add(actionKey);
         }
 
+                public CharSequence getLabelForAccessibility(Context context) {
+                    return null;
+                }
+
+            });
+
         mAdapter = new MyAdapter();
 
         AlertParams params = new AlertParams(mContext);
